@@ -1,0 +1,264 @@
+#nav_element{
+  margin-left: 10%;
+}
+
+#nav_element a {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#nav{
+    
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+strong{
+
+    font-size: 35px;    
+    color:palegreen;
+}
+ 
+.icone_lune{
+   width: 30px;
+   height: 30px;
+  
+   margin-top:15px;
+}
+
+.social{
+
+    width:50px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+
+.imgSOCIAL{
+
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20%;
+    border-radius: 5px;
+    
+}
+ .btn{
+    margin-top: 5px;
+ }
+
+#un:hover{
+background-color: dodgerblue;
+border: none;
+}
+#deux:hover{
+background-color:white;
+border: none;
+}
+#trois:hover{
+background-color:indianred;
+border: none;
+}
+#quatre:hover{
+background-color:limegreen;
+border: none;
+}
+#cinq:hover{
+background-color:lightskyblue;
+border: none;
+}
+span{
+    font-weight:bold;
+    font-size:20px;
+}
+
+#container_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+ #imgDownload{
+    width:20px;
+    height:20px;
+ }
+ .span-presentation{
+    font-size:30px;
+ }
+    
+ #btn_download{
+    border:1px solid palegreen;
+ }
+ #btn_download:hover{
+    background-color:palegreen;
+    color:#fff;
+ }
+ #lienTelcharger{
+    text-decoration: none;
+    color: #000;
+ }
+ #lienTelcharger:hover{
+    color: #fff;
+ }
+ #conatinerimg {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+       
+    width: 350px;
+    height: 350px;
+   
+  } 
+  #conatinerimg img{
+    width :100%;
+    height:100%;
+  }
+  #imagcontainerPrincipale{
+    margin-top: 5%;
+  }
+
+  #image_left{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+       
+    width: 350px;
+    height: 350px;
+  }
+.informartion{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informartion a img{
+        width:30px;
+        height:30px;
+}
+/* Base styles for larger screens */
+.social_2 {
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social_2 #user:hover {
+    background-color: palegreen;
+    border: none;
+}
+
+.social_2 #deux {
+    margin-left: 0;
+}
+
+.social_2 ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+
+
+.progress{
+    margin-top:30px;
+
+  
+}
+#progress{
+    background-color:palegreen;
+}
+#nom_competence{
+    transform:translateY(20px);
+    font-weight:bold;   
+}
+#containerServices{
+    margin-top:20px;
+}
+#icones{
+    width:50px;
+    height:50px;
+    margin-left:45%;
+}
+#card{
+    border:1px solid palegreen;
+ }
+ #card:hover{
+    background-color:palegreen;
+    color:#fff;
+ }
+ #inputContact{
+    border:1px solid palegreen;
+    outline:none ! important  ;
+
+ }
+ #inputContact:focus{
+    box-shadow:none ! important;
+ }
+
+ #envoiEmail{
+    border:1px solid palegreen;
+ }
+ #envoiEmail:hover{
+    background-color:palegreen;
+    color:#fff;
+ }
+ #tel{
+    text-decoration: none;
+    color:#000;
+ }
+ footer {
+    background-color:palegreen;
+    position:relative;
+    bottom:0;
+    height:5vh;
+
+ }
+b{
+    font-size: 14px;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .social_2 {
+        width: 100%; /* Full width */
+    }
+
+    .social_2 ul li {
+        font-weight: normal; /* Reduce font weight for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .social_2 ul {
+        padding: 0; /* Remove padding from the ul element */
+    }
+
+    .social_2 ul li {
+        padding: 5px 0; /* Add some spacing between list items */
+    }
+    #nav a{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+  @media (max-width:768px) and (min-width:578px){
+    .description{
+     
+       display: block;
+        margin-left: 3rem;
+        
+    }
+   .description span {
+    display: flex;
+    justify-content: space-evenly;
+   }
+  }

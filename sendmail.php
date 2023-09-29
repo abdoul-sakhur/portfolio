@@ -1,41 +1,44 @@
-<?php 
-use PHPMailer\PHPMailer;
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/SMTP.php';
 
-if(isset($_POST['nom']) && isset($_POST['email'])){
-    $nom=$_POST['nom'];
-    $email=$_POST['email'];
-    $commentaire=$_POST['commentaire'];
-    
-    require_once'PHPMailer/PHPMailer.php';
-    require_once'PHPMailer/Exception.php';
-    require_once'PHPMailer/SMTP.php';
-    
+if (isset($_POST['nom']) && isset($_POST['email'])) {
+    $nom = $_POST['nom'];
+    $email = $_POST['email'];
+    $commentaire = $_POST['commentaire'];
+
     $mail = new PHPMailer(true);
-    $mail->isSendmail();
-    $mail->Host ='smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'sarbaabdoulsacourou@gmail.com';
-    $mail->Password = 'mansourou2002';
-    $mail->SMTPSecure ='ssl';
-    $mail->Port = 465;
 
+    try {
+        
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'sarbaabdoulsacourou@gmail.com'; 
+        $mail->Password = 'aglf uhhq kzig jyix'; 
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587; 
 
-    $mail->setFrom($email, $nom);
-    $mail->addAddress('sarbaabdoulsacourou@gmail.com');
-    $mail->isHTML(true);
-    $mail->Subject = 'Commentaire';
-    $mail->Body    = $commentaire;
-    if( $mail->send()){
-        echo "Message envoyé";
-        header('Location:index.html');
-    }else{
-        echo "Message non envoyé";
-        header('Location:index.html');
+        $mail->setFrom($email, $nom);
+        $mail->addAddress('sarbaabdoulsacourou@gmail.com'); 
+        $mail->isHTML(true);
+
+       
+        $mail->Subject = $nom;
+        $mail->Body = $commentaire;
+
+        $mail->send();
+        echo "<script>
+        console.log('Email envoyé');
+        alert('Email envoyé');
+    </script>";
+        header('Location: index.html');
+    } catch (Exception $e) {
+        echo "Erreur lors de l'envoi de l'e-mail : {$mail->ErrorInfo}";
     }
-   
-   
-
-
 }
 ?>

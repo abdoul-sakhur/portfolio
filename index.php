@@ -14,26 +14,28 @@ if (isset($_POST['nom']) && isset($_POST['email'])) {
     $mail = new PHPMailer(true);
 
     try {
-        // Paramètres SMTP
+        
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sarbaabdoulsacourou@gmail.com'; // Votre adresse Gmail
-        $mail->Password = 'aglf uhhq kzig jyix'; // Votre mot de passe Gmail
-        $mail->SMTPSecure = 'tls'; // Utilisez TLS
-        $mail->Port = 587; // Port TLS de Gmail
+        $mail->Username = 'sarbaabdoulsacourou@gmail.com'; 
+        $mail->Password = 'aglf uhhq kzig jyix'; 
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587; 
 
-        // Destinataire et expéditeur
         $mail->setFrom($email, $nom);
-        $mail->addAddress('sarbaabdoulsacourou@gmail.com'); // Adresse de destination
+        $mail->addAddress('sarbaabdoulsacourou@gmail.com'); 
         $mail->isHTML(true);
 
-        // Sujet et contenu de l'e-mail
-        $mail->Subject = 'important';
+       
+        $mail->Subject = $nom;
         $mail->Body = $commentaire;
 
         $mail->send();
-        echo "Message envoyé";
+        echo "<script>
+        console.log('Email envoyé');
+        alert('Email envoyé');
+    </script>";
         header('Location: index.php');
     } catch (Exception $e) {
         echo "Erreur lors de l'envoi de l'e-mail : {$mail->ErrorInfo}";
@@ -51,9 +53,9 @@ if (isset($_POST['nom']) && isset($_POST['email'])) {
   <link rel="shortcut icon" href="assets/images/laptop-device-computer-screen-monitor-16-28624.png">
   <title>Sarba Abdoul-sacourou</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/sweetalert2.css">
   <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
-  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.min.css">
   <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.css">
 </head>
@@ -464,46 +466,44 @@ body {
   </footer>
 
   <script>
-    // Fonction de validation du formulaire
+    
     function validateForm() {
-      // Récupération des valeurs des champs
+     
       var nom = document.forms["myForm"]["nom"].value;
       var email = document.forms["myForm"]["email"].value;
       var commentaire = document.forms["myForm"]["commentaire"].value;
   
-      // Validation du champ nom (il ne doit pas être vide)
+     
       if (nom == "") {
         alert("Veuillez entrer votre nom.");
         return false;
       }
   
-      // Validation du champ email (il doit être une adresse email valide)
+      
       if (!isValidEmail(email)) {
         alert("Veuillez entrer une adresse email valide.");
         return false;
       }
   
-      // Validation du champ commentaire (il ne doit pas être vide)
       if (commentaire == "") {
         alert("Veuillez entrer un commentaire.");
         return false;
       }
-  
-      // Si toutes les validations passent, le formulaire est valide
+
       return true;
     }
   
-    // Fonction pour valider une adresse email
+
     function isValidEmail(email) {
       var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
       return pattern.test(email);
     }
   </script>
-  
+  <script src="assets/sweetalert2.all.js"></script>
+  <script src="assets/sweetalert2.all.min.js"></script>
   <script src="assets/fontawesome-free-6.2.0-web/js/all.js"></script>
   <script src="assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
-  <script src="node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
-  <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
   <script src="assets/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 </body>
 

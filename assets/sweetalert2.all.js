@@ -1,5 +1,5 @@
 /*!
-* sweetalert2 v11.7.28
+* sweetalert2 v11.7.31
 * Released under the MIT License.
 */
 (function (global, factory) {
@@ -3449,12 +3449,12 @@
    * Increase timer. Returns number of milliseconds of an updated timer.
    * If `timer` parameter isn't set, returns undefined.
    *
-   * @param {number} n
+   * @param {number} ms
    * @returns {number | undefined}
    */
-  const increaseTimer = n => {
+  const increaseTimer = ms => {
     if (globalState.timeout) {
-      const remaining = globalState.timeout.increase(n);
+      const remaining = globalState.timeout.increase(ms);
       animateTimerProgressBar(remaining, true);
       return remaining;
     }
@@ -4270,7 +4270,7 @@
     };
   });
   SweetAlert.DismissReason = DismissReason;
-  SweetAlert.version = '11.7.28';
+  SweetAlert.version = '11.7.31';
 
   const Swal = SweetAlert;
   // @ts-ignore

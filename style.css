@@ -196,6 +196,7 @@ span{
     margin-left:45%;
 }
 #card{
+    
     border:1px solid var(--text-strong-color);
  }
  #card:hover{
@@ -274,4 +275,20 @@ b{
     justify-content: space-evenly;
    }
 
+  }
+
+  #img_project{
+    max-width: 520px;
+    height: 150px;
+    background: #000;
+    margin: 10px;
+    object-fit: cover;
+
+    
+  }
+  .dtails{
+    color: #000;
+  }
+  .dtails:hover{
+    color: #fff;
   }

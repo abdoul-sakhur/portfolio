@@ -1,0 +1,65 @@
+[
+  {
+    "name": "batikleen",
+    "desc": "Site web entreprise de construction et vente de maisons",
+    "image": "batikleen",
+    "category": "web",
+    "links": {
+      "view": "https://batikleen.net/",
+      "code": "https://batikleen.net/"
+    }
+  },
+  {
+    "name": "E-commerce ",
+    "desc": "E-commerce d'accessoires CAN 2024 CAF A l'occasion de la CAN 2024 , j'ai developpe une application de vente d'accessoire sportif en laravel 10",
+    "image": "ecommerce",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/abdoul-sakhur/Can-shop.git",
+      "code": "https://github.com/abdoul-sakhur/Can-shop.git"
+    }
+  },
+  {
+    "name": "restaurant",
+    "desc": "Restaurant en ligne Application web d'un restaurant developpe en laravel 10",
+    "image": "restaurant",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/abdoul-sakhur/laravel-restaurant-.git",
+      "code": "https://github.com/abdoul-sakhur/laravel-restaurant-.git"
+    }
+  },
+  
+  {
+    "name": "restaurant",
+    "desc": "Site web d'un restaurant afin d'apprehander le langage php , pour mes debuts j'ai decicde de creer un restaurant en ligne",
+    "image": "resto",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/abdoul-sakhur/restaurant_website.git",
+      "code": "https://github.com/abdoul-sakhur/restaurant_website.git"
+    }
+  },
+  {
+    "name": "Blog",
+    "desc": "Blog en Django blog pour tester mes connaissances en django",
+    "image": "restaurant",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/abdoul-sakhur/blog.git",
+      "code": "https://github.com/abdoul-sakhur/blog.git"
+    }
+  },
+  {
+    "name": "boutique",
+    "desc": "Boutique de ventre d'article Africain J'ai eu l'occasion de travailler sur un mini projet .",
+    "image": "shop",
+    "category": "web",
+    "links": {
+      "view": "https://abdoul-sakhur.github.io/portfolio/#",
+      "code": "https://abdoul-sakhur.github.io/portfolio/#"
+    }
+  }
+ 
+
+]

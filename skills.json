@@ -1,0 +1,94 @@
+[
+   
+    {
+        "name": "Cypress",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/3/cypress-lpcp8vjrffdm1rjfhibzk.png/cypress-hapgnw6uqxj2gtt42gh4wd.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "Playwright",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/2/playwright-y50bnthygb3rvsppvkm9e.png/playwright-q55xzpenhgjsodksybst.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "Jira",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/4/jira-pnycaxr0fbihcuqxhf489.png/jira-bvilsaksrdmiyyicl77kip.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+    },
+ 
+ 
+    {
+        "name": "TailwindCSS",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    },
+   
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "TypeScript",
+        "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/48/typescript_original_logo_icon_146317.png"
+    },
+    {
+        "name": "NextJS",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/2/nextjs-icon-v87ssxlr84kha596abb0ca.png/nextjs-icon-fkqmlurjtjr7i68y2pe56.png?_a=DAJFJtWIZAA0"
+    },
+   
+   
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    },
+    {
+        "name": "Laravel",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/4/laravel-d85ld1msom6fa9mce1hei.png/laravel-mqcmbk8e8unuyaqexalbl.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "Django",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/3/django-icon-ozb2brnujb9dunjyx3d9xe.png/django-icon-p0v5p3t0ixxd5d03b6zt.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "Postman",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/2/postman-icon-vis2s6mumso1l99r2sl4i.png/postman-icon-r1svcbhv3fhqh0e0dscfr.png?_a=DAJFJtWIZAA0"
+    },
+    {
+        "name": "HTTPie",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/3/httpie-foxuowj278niewe7i4d8v.png/httpie-etjady9xsonu6wuf29ihj8.png?_a=DAJFJtWIZAA0"
+    },
+  
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    },
+ 
+    {
+        "name": "Git VCS",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    } 
+]

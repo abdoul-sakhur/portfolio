@@ -13,6 +13,10 @@
         "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/4/jira-pnycaxr0fbihcuqxhf489.png/jira-bvilsaksrdmiyyicl77kip.png?_a=DAJFJtWIZAA0"
     },
     {
+        "name": "Xray",
+        "icon": "https://assets.streamlinehq.com/image/private/w_50,h_50,ar_1/f_auto/v1/icons/5/xray-for-jira-ehlprq39608no8nw52j489.png/xray-for-jira-8c7ael4m5zn9xoplv4xzs9.png?_a=DAJFJtWIZAAC"
+    },
+    {
         "name": "NodeJS",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },

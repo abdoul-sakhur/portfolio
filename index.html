@@ -1,301 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="sarba abdoul, portfolio, sarba, développeur full stack, portfolio personnel lifecodes, design de portfolio, site web de portfolio, portfolio personnel" />
-<meta name="description" content="Bienvenue sur le portfolio de Sarba. Développeur Web Full-Stack et QA testeur" />
-<!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio | Sarba Abdoul</title>
+    <title>Abdoul Sarba - Testeur Logiciel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body oncontextmenu="return false">
+<body>
+    <div class="terminal-line">$ loading portfolio.sh --user=abdoul_sarba</div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#education">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero" class="section">
+            <div class="terminal-line blink">$ _</div>
+            <h1>Abdoul Sarba</h1>
+            <h2>Testeur Logiciel QA</h2>
+            <p class="subtitle">Spécialisé en tests manuels et automatisés</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Me contacter</a>
+                <a href="#skills" class="btn-secondary">Voir mes compétences</a>
+            </div>
+        </section>
 
+        <section id="about" class="section">
+            <div class="terminal-line">$ whoami</div>
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Spécialisé en tests manuels et automatisés, je me consacre à l'identification des problèmes et à l'amélioration des performances des logiciels.</p>
+                    <p>Avec une expérience avérée en environnement Agile, j'ai la capacité de travailler efficacement en Scrum pour garantir des livraisons de qualité.</p>
+                    <p>Passionné par la qualité logicielle, j'aime explorer de nouveaux outils et méthodologies pour améliorer les processus de test.</p>
+                </div>
+                <div class="about-image">
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">></span> npm test</p>
+                            <p>Running 42 tests...</p>
+                            <p><span class="success">✓</span> 42/42 tests passed</p>
+                            <p><span class="prompt">></span> <span class="blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- navbar starts -->
-<header>
-  <a href="/" class="logo"><i class="fas fa-code-branch"></i> Sarba Abdoul.</a>
+        <section id="skills" class="section">
+            <div class="terminal-line">$ skills --list --detailed</div>
+            <h2>Compétences Techniques</h2>
+            
+            <div class="skills-grid">
+                <!-- Automatisation des tests -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-rocket"></i> Automatisation des tests</h3>
+                    <div class="skills-container">
+                        <div class="skill-card" data-tooltip="Cypress v12">
+                            <i class="fab fa-js"></i>
+                            <img src="img/cypress-icon.svg" alt="Cypress" class="tech-icon">
+                            <span>Cypress</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Playwright v1.35">
+                            <i class="fas fa-play"></i>
+                            <img src="img/playwright-icon.svg" alt="Playwright" class="tech-icon">
+                            <span>Playwright</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Selenium WebDriver">
+                            <i class="fas fa-robot"></i>
+                            <span>Selenium</span>
+                        </div>
+                    </div>
+                </div>
 
-  <div id="menu" class="fas fa-bars"></div>
-  <nav class="navbar">
-      <ul>
-          <li><a class="active" href="#home">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#education">Éducation</a></li>
-          <li><a href="#work">Travail</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-  </nav>
-</header>
+                <!-- CI/CD -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> CI/CD</h3>
+                    <div class="skills-container">
+                        <div class="skill-card jenkins-icon" data-tooltip="Jenkins v2.414">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="GitHub Actions">
+                            <i class="fab fa-github-alt"></i>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Docker v24">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
 
-<!-- navbar ends -->
+                <!-- Outils QA -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Outils QA</h3>
+                    <div class="skills-container">
+                        <div class="skill-card" data-tooltip="JIRA + Xray">
+                            <i class="fab fa-jira"></i>
+                            <span>JIRA</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Postman v10">
+                            <i class="fas fa-server"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="SonarQube v9">
+                            <i class="fas fa-chart-line"></i>
+                            <span>SonarQube</span>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Langages -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Langages</h3>
+                    <div class="skills-container">
+                        <div class="skill-card" data-tooltip="JavaScript ES6+">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Python 3">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Bash scripting">
+                            <i class="fas fa-terminal"></i>
+                            <span>Bash</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="TypeScript 5">
+                            <i class="fas fa-code"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="PHP 8">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
 
-<!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skills-container">
+                        <div class="skill-card" data-tooltip="Django 4">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Next.js 13">
+                            <i class="fab fa-react"></i>
+                            <span>NextJS</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Laravel 10">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="content">
-      <h2>Bonjour,<br/> Je suis Sarba <span>Abdoul</span></h2>
-      <p>Je suis  <span class="typing-text"></span></p>
-      <a href="#about" class="btn"><span>À propos de moi</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/abdoul-sacourou-sarba-92799228b" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/abdoul-sakhur/" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="https://wa.me/+2250170998499/?text=Bonjour%20monsieur%20%20Sarba" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="https://wa.me/+2250170998499/?text=Bonjour%20monsieur%20%20Sarba" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
-         
-         
-        </ul>
-      </div>
-    </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/moi2.jpg" alt="">
-</div>
-</section>
-<!-- hero section ends -->
+        <section id="experience" class="section">
+            <div class="terminal-line">$ cat experience.txt</div>
+            <h2>Expérience Professionnelle</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (Sept) - 2024 (Déc)</div>
+                    <div class="timeline-content">
+                        <h3>Stagiaire QA Tester (graduate)</h3>
+                        <h4>Arolttec</h4>
+                        <ul>
+                            <li>Participation à l'exécution des tests sur les applications web</li>
+                            <li>Rédaction de rapports de tests détaillés et clairs</li>
+                            <li>Identification des anomalies et proposition de solutions</li>
+                            <li>Collaboration étroite avec l'équipe de développement</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Développeur web Fullstack</h3>
+                        <h4>Batikleen</h4>
+                        <ul>
+                            <li>Conception du site web de l'entreprise Batikleen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- section à propos commence -->
-<section class="about" id="about">
-  <h2 class="heading"><i class="fas fa-user-alt"></i> À propos de <span>Moi</span></h2>
-  
-  <div class="row">
+        <section id="education" class="section">
+            <div class="terminal-line">$ education --all</div>
+            <h2>Formation</h2>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Licence en informatique (en cours)</h3>
+                    <h4>Agitel-formation | 2023-2024</h4>
+                </div>
+                
+                <div class="education-card">
+                    <h3>BTS Informatique Développeur d'Application</h3>
+                    <h4>Agitel-formation | 2021-2023</h4>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Baccalauréat série D</h3>
+                    <h4>Lycée classique Abidjan | 2020-2021</h4>
+                </div>
+            </div>
+        </section>
 
-  <div class="image2">
-      <img draggable="false" class="tilt" src="./assets/images/moi2.jpg" alt="">
-  </div>
-  <div class="content">
-      <h3>Je suis Sarba Abdoul</h3>
-      <span class="tag">Développeur Full-Stack / Testeur QA</span>
-      <p>Je suis Sarba Abdoul, développeur Fullstack et testeur QA. Passionné par la technologie et l'innovation, j'ai
-      développé une expertise solide en conception et développement d'applications web et en assurance qualité des
-      logiciels.
-       Avec une grande capacité à travailler en environnement Agile et une maîtrise des technologies modernes
-      , je m'efforce constamment d'améliorer mes compétences et de livrer des solutions de haute
-      qualité.
-      
-      Découvrez mon parcours, mes projets et comment je peux apporter une valeur ajoutée à votre équipe.
-      Bienvenue dans mon
-      portfolio</p>
-      
-      <div class="box-container">
-          <div class="box">
-            <p><span> Email : </span> sarbaabdoulsacourou@gmail.com</p>
-            <p><span> Adresse : </span> Cote d'Ivoire , Abidjan , cocody riviera 4</p>
-          </div>
-      </div>
-      
-      <div class="resumebtn">
-          <a href="assets/CV QA TESTER SARBA ABDOUL.pdf"  class="btn" download><span>CV de Testeur QA </span>
-              <i class="fas fa-chevron-right"></i>
-          </a> 
-          <a href="assets/CV_Développeur_Full-stack_( abdoul-sacourou sarba).pdf" class="btn" download><span>CV de développeur Full-stack </span>
-              <i class="fas fa-chevron-right"></i>
-          </a>
-      </div>
-      <style> .resumebtn { display: flex; gap: 10px; /* Ajustez cette valeur pour augmenter ou diminuer l'espacement */ } </style>
-  </div>
-  </div>
-</section>
-<!-- section à propos se termine -->
+        <section id="contact" class="section">
+            <div class="terminal-line">$ contact --method=email</div>
+            <h2>Contactez-moi</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Disponible pour des opportunités en tant que Testeur Logiciel QA</p>
+                    <p>N'hésitez pas à me contacter pour discuter de projets ou collaborations.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="terminal-line">$ exit</div>
+        <p>© 2024 Abdoul Sarba. Tous droits réservés.</p>
+    </footer>
 
-<!-- section compétences commence -->
-<section class="skills" id="skills">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Compétences & <span>Capacités</span></h2>
-
-  <div class="container">
-        <div class="row" id="skillsContainer">
-
-
-    </div>
-</div>
-</section>
-<!-- section compétences se termine -->
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projets <span>Réalisés</span></h2>
-
-  <div class="box-container">
-
-  </div>
-  
-</section>
-
-
-</section>
-<!-- section projets réalisés se termine -->
-
-<!-- section expérience commence -->
-<section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Expérience </h2>
-
-  <div class="timeline">
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Arolitec </h2>
-        </div>
-        <div class="desc">
-            <h3>Testeur QA | stage (graduate)</h3>
-            <p>Septembre 2024 - Decembre 2024 </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Batikleen</h2>
-        </div>
-        <div class="desc">
-            <h3>Développeur de Site Web | Freelance </h3>
-            <p>Mai 2023 - juillet 2023</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="morebtn" style="margin-top:200px;">
-    <a href="/experience" class="btn"><span>Voir Tout</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-
-</div>
-
-</section>
-<!-- section expérience se termine -->
-
-<!-- section contact commence -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Prenez <span>Contact</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form" action="contact.php" method="post">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Nom" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Téléphone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit" name="submitBtn">
-          Envoyer <i class="fa fa-paper-plane"></i>
-        </button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
-<!-- section contact se termine -->
-
-
-<!-- section footer commence -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3> Portfolio de Sarba Abdoul</h3>
-          <p>Merci d'avoir visité mon site web personnel. Connectez-vous avec moi sur les réseaux sociaux. <br/> <br/> Continuez à monter 🚀. Connectez-vous avec moi en chat en direct !</p>
-      </div>
-
-      <div class="box">
-          <h3>liens rapides</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> accueil</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> à propos</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> compétences</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> éducation</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> travail</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> expérience</a>
-      </div>
-
-      <div class="box">
-          <h3>infos de contact</h3>
-          <p> <i class="fas fa-phone"></i>+2250170998499</p>
-          <p> <i class="fas fa-envelope"></i>sarbaabdoulsacourou@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Cote d'ivoire , Abidjan , cocody rue E44</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/abdoul-sacourou-sarba-92799228b" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/abdoul-sakhur/" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:sarbaabdoulsacourou@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-               <a href="https://wa.me/+2250170998499/?text=Bonjour%20monsieur%20%20Sarba" class="fab fa-whatsapp" aria-label="Telegram" target="_blank"></a>
-          </div>
-      </div>
-  </div>
-
-  <h1 class="credit">Conçu par sarba abdoul </h1>
-
-</section>
-<!-- section footer se termine -->
-
-
-
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./assets/js/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

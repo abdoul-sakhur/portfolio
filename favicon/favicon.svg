@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#64ffda;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4FFBDF;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Fond circulaire -->
+    <circle cx="256" cy="256" r="248" fill="#0a192f" stroke="url(#grad)" stroke-width="16"/>
+    
+    <!-- Symbole de test stylisé -->
+    <g transform="translate(256 256)">
+        <!-- Cercle de progression -->
+        <circle r="180" fill="none" stroke="url(#grad)" stroke-width="24" stroke-dasharray="565,1131" 
+                transform="rotate(-90)" opacity="0.3"/>
+        
+        <!-- Check mark -->
+        <path d="M-120,20 L-40,100 L120,-60" fill="none" stroke="url(#grad)" stroke-width="32" 
+              stroke-linecap="round" stroke-linejoin="round">
+            <animate attributeName="stroke-dasharray" from="0,500" to="500,500" dur="1s" fill="freeze"/>
+        </path>
+        
+        <!-- Points de test -->
+        <circle cx="-100" cy="-80" r="12" fill="#64ffda"/>
+        <circle cx="100" cy="-40" r="12" fill="#64ffda"/>
+        <circle cx="60" cy="100" r="12" fill="#64ffda"/>
+        
+        <!-- Lignes de connexion -->
+        <path d="M-100,-80 L100,-40 L60,100 L-100,-80" fill="none" stroke="#64ffda" 
+              stroke-width="4" opacity="0.3"/>
+    </g>
+</svg> 

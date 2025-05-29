@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+    <defs>
+        <circle id="circle" cx="128" cy="128" r="128"/>
+    </defs>
+    <g>
+        <circle fill="#1B2A3A" cx="128" cy="128" r="128"/>
+        <!-- Masque Triste (Rouge) -->
+        <path d="M90,80 C70,80 60,100 60,120 C60,150 80,170 90,170 C100,170 110,160 110,140 L110,110 C110,90 100,80 90,80 Z" fill="#FF5F56"/>
+        <path d="M75,120 C75,120 85,125 90,125 C95,125 105,120 105,120" stroke="#1B2A3A" stroke-width="3" fill="none"/>
+        <circle fill="#1B2A3A" cx="90" cy="105" r="8"/>
+        
+        <!-- Masque Joyeux (Vert) -->
+        <path d="M166,80 C186,80 196,100 196,120 C196,150 176,170 166,170 C156,170 146,160 146,140 L146,110 C146,90 156,80 166,80 Z" fill="#27c93f"/>
+        <path d="M151,120 C151,120 161,130 166,130 C171,130 181,120 181,120" stroke="#1B2A3A" stroke-width="3" fill="none"/>
+        <circle fill="#1B2A3A" cx="166" cy="105" r="8"/>
+    </g>
+</svg> 

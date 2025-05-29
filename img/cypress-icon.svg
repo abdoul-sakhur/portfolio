@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+    <defs>
+        <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#64FFDA;stop-opacity:0.3"/>
+            <stop offset="100%" style="stop-color:#64FFDA;stop-opacity:0.1"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <circle fill="url(#circleGradient)" cx="128" cy="128" r="128"/>
+        <path d="M160,88 C160,74.745166 149.254834,64 136,64 L96,64 C82.745166,64 72,74.745166 72,88 L72,168 C72,181.254834 82.745166,192 96,192 L136,192 C149.254834,192 160,181.254834 160,168 L160,88 Z" fill="#1B2A3A"/>
+        <path d="M96,80 L136,80 C140.418278,80 144,83.581722 144,88 L144,168 C144,172.418278 140.418278,176 136,176 L96,176 C91.581722,176 88,172.418278 88,168 L88,88 C88,83.581722 91.581722,80 96,80 Z" fill="#64FFDA"/>
+        <path d="M184,128 L184,168 C184,194.509668 162.509668,216 136,216 L96,216 C69.490332,216 48,194.509668 48,168 L48,128" stroke="#64FFDA" stroke-width="12" fill="none"/>
+    </g>
+</svg> 

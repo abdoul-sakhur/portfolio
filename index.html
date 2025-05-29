@@ -9,39 +9,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="terminal-line">$ loading portfolio.sh --user=abdoul_sarba</div>
     
     <header>
         <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-left">
+                <span class="logo-initial">A</span>
+                <span class="logo-initial">S</span>
+            </div>
+            
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="cv/abdoul-sarba-cv.pdf" class="cv-button" download>
+                    <i class="fas fa-download"></i>
+                    Télécharger CV
+                </a>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="section">
-            <div class="terminal-line blink">$ _</div>
-            <h1>Abdoul Sarba</h1>
-            <h2>Testeur Logiciel QA</h2>
-            <p class="subtitle">Spécialisé en tests manuels et automatisés</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Me contacter</a>
-                <a href="#skills" class="btn-secondary">Voir mes compétences</a>
+            <div class="content">
+                <div class="terminal-line blink">$ _</div>
+                <h1>Abdoul Sarba</h1>
+                <h2>Testeur Logiciel QA</h2>
+                <p class="subtitle">Spécialisé en tests manuels et automatisés</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/2250170998499" class="btn-primary" target="_blank">Me contacter</a>
+                    <a href="#skills" class="btn-secondary">Voir mes compétences</a>
+                </div>
+            </div>
+            <div class="hero-photo-card">
+                <div class="photo-container">
+                    <img src="img/profile.jpg" alt="Abdoul Sarba" class="profile-photo">
+                    <div class="photo-border"></div>
+                </div>
+                <div class="photo-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
             </div>
         </section>
 
         <section id="about" class="section">
-            <div class="terminal-line">$ whoami</div>
+            <div class="terminal-line">$ Qui suis-je ?</div>
             <h2>À propos de moi</h2>
             <div class="about-content">
                 <div class="about-text">
@@ -57,7 +82,7 @@
                             <span class="dot green"></span>
                         </div>
                         <div class="terminal-body">
-                            <p><span class="prompt">></span> npm test</p>
+                            <p><span class="prompt">></span> npm abdoul automatise les tests</p>
                             <p>Running 42 tests...</p>
                             <p><span class="success">✓</span> 42/42 tests passed</p>
                             <p><span class="prompt">></span> <span class="blink">_</span></p>
@@ -68,7 +93,7 @@
         </section>
 
         <section id="skills" class="section">
-            <div class="terminal-line">$ skills --list --detailed</div>
+            <div class="terminal-line">$ Liste --De compétences --Detaillée</div>
             <h2>Compétences Techniques</h2>
             
             <div class="skills-grid">
@@ -77,18 +102,12 @@
                     <h3><i class="fas fa-rocket"></i> Automatisation des tests</h3>
                     <div class="skills-container">
                         <div class="skill-card" data-tooltip="Cypress v12">
-                            <i class="fab fa-js"></i>
                             <img src="img/cypress-icon.svg" alt="Cypress" class="tech-icon">
                             <span>Cypress</span>
                         </div>
                         <div class="skill-card" data-tooltip="Playwright v1.35">
-                            <i class="fas fa-play"></i>
                             <img src="img/playwright-icon.svg" alt="Playwright" class="tech-icon">
                             <span>Playwright</span>
-                        </div>
-                        <div class="skill-card" data-tooltip="Selenium WebDriver">
-                            <i class="fas fa-robot"></i>
-                            <span>Selenium</span>
                         </div>
                     </div>
                 </div>
@@ -101,9 +120,9 @@
                             <i class="fab fa-jenkins"></i>
                             <span>Jenkins</span>
                         </div>
-                        <div class="skill-card" data-tooltip="GitHub Actions">
-                            <i class="fab fa-github-alt"></i>
-                            <span>GitHub Actions</span>
+                        <div class="skill-card" data-tooltip="Sourcetree">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Sourcetree</span>
                         </div>
                         <div class="skill-card" data-tooltip="Docker v24">
                             <i class="fab fa-docker"></i>
@@ -120,14 +139,23 @@
                             <i class="fab fa-jira"></i>
                             <span>JIRA</span>
                         </div>
+                        <div class="skill-card" data-tooltip="SQUASH">
+                            <i class="fas fa-cube"></i>
+                            <span>SQUASH</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="CLICKUP">
+                            <i class="fas fa-tasks"></i>
+                            <span>ClickUp</span>
+                        </div>
                         <div class="skill-card" data-tooltip="Postman v10">
                             <i class="fas fa-server"></i>
                             <span>Postman</span>
                         </div>
-                        <div class="skill-card" data-tooltip="SonarQube v9">
-                            <i class="fas fa-chart-line"></i>
-                            <span>SonarQube</span>
+                        <div class="skill-card" data-tooltip="HTTPie">
+                            <i class="fas fa-terminal"></i>
+                            <span>HTTPie</span>
                         </div>
+
                     </div>
                 </div>
 
@@ -162,17 +190,21 @@
                 <div class="skill-category">
                     <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
                     <div class="skills-container">
-                        <div class="skill-card" data-tooltip="Django 4">
+                        <div class="skill-card" data-tooltip="Django ">
                             <i class="fab fa-python"></i>
                             <span>Django</span>
                         </div>
-                        <div class="skill-card" data-tooltip="Next.js 13">
+                        <div class="skill-card" data-tooltip="Next.js ">
                             <i class="fab fa-react"></i>
                             <span>NextJS</span>
                         </div>
-                        <div class="skill-card" data-tooltip="Laravel 10">
+                        <div class="skill-card" data-tooltip="Laravel ">
                             <i class="fab fa-laravel"></i>
                             <span>Laravel</span>
+                        </div>
+                        <div class="skill-card" data-tooltip="Flutter">
+                            <img src="img/flutter-icon.svg" alt="Flutter" class="tech-icon">
+                            <span>Flutter</span>
                         </div>
                     </div>
                 </div>
@@ -180,10 +212,29 @@
         </section>
 
         <section id="experience" class="section">
-            <div class="terminal-line">$ cat experience.txt</div>
+            <div class="terminal-line">$ cat Mon experience.xlxs</div>
             <h2>Expérience Professionnelle</h2>
             
             <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (Jan) </div>
+                    <div class="timeline-content">
+                        <h3>Testeur Automaticien </h3>
+                        <h4>Overnetflow - Prosol France</h4>
+                        <ul>
+                            <li>Conception de cas de test et mise en place de stratégies de test</li>
+                            <li>Analyse des exigences fonctionnelles et techniques pour identifier les cas de test pertinents</li>
+                            <li>Développement et maintenance des scripts de tests automatisés avec Cypress et Playwright</li>
+                            <li>Remonter les bugs aux développeurs et suivi de leur résolution</li>
+                            <li>Automatisation des processus de bout en bout (E2E testing)</li>
+                            <li>Mise en place et maintenance des pipelines CI/CD avec Jenkins</li>
+                            <li>Développement de scripts Shell pour l'automatisation des tâches</li>
+                            <li>Participation à l'exécution des tests sur les applications web</li>
+                            <li>Rédaction de rapports de tests détaillés et clairs</li>
+                            <li>Collaboration étroite avec l'équipe de développement</li>
+                        </ul>
+                    </div>
+                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2024 (Sept) - 2024 (Déc)</div>
                     <div class="timeline-content">
@@ -196,9 +247,9 @@
                             <li>Collaboration étroite avec l'équipe de développement</li>
                         </ul>
                     </div>
-                </div>
+                 </div>
                 
-                <div class="timeline-item">
+                 <div class="timeline-item">
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content">
                         <h3>Développeur web Fullstack</h3>
@@ -212,7 +263,7 @@
         </section>
 
         <section id="education" class="section">
-            <div class="terminal-line">$ education --all</div>
+            <div class="terminal-line">$ Formation --all</div>
             <h2>Formation</h2>
             
             <div class="education-grid">
@@ -243,23 +294,30 @@
                     <p>N'hésitez pas à me contacter pour discuter de projets ou collaborations.</p>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/abdoul-sacourou-sarba-92799228b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B42PB8W1ATbW2CRW9%2FOJptA%3D%3D" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/abdoul-sakhur" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/2250170998499" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-video"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
                 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
+                        <input type="text" name="user_name" id="user_name" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
+                        <input type="email" name="user_email" id="user_email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Envoyer</button>
+                    <button type="submit" class="btn-primary">
+                        <span class="button-text">Envoyer</span>
+                        <span class="loading-spinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
                 </form>
             </div>
         </section>

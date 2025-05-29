@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="317px" viewBox="0 0 256 317" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+    <defs>
+        <linearGradient x1="3.9517088%" y1="26.9930287%" x2="75.8970734%" y2="52.9192657%" id="linearGradient-1">
+            <stop stop-color="#64FFDA" offset="0%"></stop>
+            <stop stop-color="#64FFDA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <path d="M157.666667,0.0002 L0.002,157.666667 L48.8918667,206.556533 L255.998667,0.0002 L157.666667,0.0002 Z" fill="url(#linearGradient-1)"></path>
+        <path d="M156.567333,145.777333 L72.1506667,230.196 L121.04,279.087333 L169.928,230.196 L255.998667,144.124 L256,44.4533333 L156.567333,145.777333 Z" fill="url(#linearGradient-1)"></path>
+        <path d="M121.04,279.087333 L158.506667,316.554667 L256,316.554667 L169.928,230.196 L121.04,279.087333 Z" fill="url(#linearGradient-1)"></path>
+        <path d="M71.5746667,230.196 L121.04,181.333333 L169.928,230.196 L121.04,279.087333 L71.5746667,230.196 Z" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg> 

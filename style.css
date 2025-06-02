@@ -812,33 +812,38 @@ footer {
     margin-left: auto;
 }
 
-.photo-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    background-color: var(--primary);
-    box-shadow: var(--shadow-md);
-    transform: perspective(1000px) rotateY(-5deg);
-    transition: var(--transition);
-}
-
-.hero-photo-card:hover .photo-container {
-    transform: perspective(1000px) rotateY(0deg);
-}
-
 .profile-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
     filter: grayscale(20%);
+    background-color: var(--background);
+    object-position: top center;
 }
 
 .photo-container:hover .profile-photo {
     transform: scale(1.05);
     filter: grayscale(0%);
+}
+
+/* Amélioration du conteneur photo */
+.photo-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--background);
+    box-shadow: var(--shadow-md);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: var(--transition);
+    border: 2px solid rgba(100, 255, 218, 0.1);
+}
+
+.hero-photo-card:hover .photo-container {
+    transform: perspective(1000px) rotateY(0deg);
+    border-color: var(--secondary);
 }
 
 .photo-border {

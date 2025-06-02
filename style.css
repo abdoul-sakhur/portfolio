@@ -817,14 +817,14 @@ footer {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
-    filter: grayscale(20%);
+    /* filter: grayscale(20%); */
     background-color: var(--background);
     object-position: top center;
 }
 
 .photo-container:hover .profile-photo {
     transform: scale(1.05);
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
 
 /* Amélioration du conteneur photo */
